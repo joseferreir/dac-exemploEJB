@@ -25,7 +25,8 @@ public class CalculadoraApp {
         System.out.println("Digite um numero: ");
         int y = in.nextInt();   in.nextLine();
        
-        String name = "";
+//        String name = "java:global/core/CalculadoraCore!br.edu.ifpb.dac.core";
+        String name = "java:global/core/CalculadoraCore";
         Calculadora calculadora = ServiceLocator.loockup(name);
         
         int soma = calculadora.soma(x, y);
